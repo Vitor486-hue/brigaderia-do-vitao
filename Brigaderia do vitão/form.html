@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Encomendas - Brigaderia Doçura</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/form.js" defer></script>
+
+</head>
+<body>
+
+<nav class="menu">
+    <img src="img/logo.png" class="logo">
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="form.html">Encomendas</a></li>
+        <li><a href="about.html">Sobre</a></li>
+    </ul>
+</nav>
+
+<section class="content">
+    <h2>Faça sua Encomenda</h2>
+
+    <form id="pedido" action="formAction.html" method="GET">
+        <label>Nome completo:</label>
+        <input type="text" name="nome" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Quantidade de brigadeiros:</label>
+        <input type="number" name="quantidade" min="1" required>
+
+        <label>Escolha o sabor:</label>
+        <select name="sabor" required>
+            <option value="">Selecione...</option>
+            <option value="Tradicional">Tradicional</option>
+            <option value="Gourmet">Gourmet</option>
+            <option value="Beijinho">Beijinho</option>
+        </select>
+
+        <label>Mensagem adicional:</label>
+        <textarea name="mensagem"></textarea>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</section>
+
+</body>
+</html>
